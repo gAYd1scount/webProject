@@ -63,12 +63,14 @@ time, mark, audio, video {
 align-items: center;  
 text-align: center;
 margin-top: 50px;
+height: 5vh;
 color: black;
 }
 
 #big2{
   align-items: center;  
   text-align: center;
+  height: 5vh;
   color: black;
 }
 
@@ -100,6 +102,7 @@ color: black;
 .almarai-regular {
   font-family: "almarai", sans-serif;
   font-weight: 400;
+  font-size: 30px;
   font-style: normal;
 }
 
@@ -116,12 +119,23 @@ color: black;
 }
 
 .featured{
+  text-align: center;
   margin-left: 50px;
   padding-top: 25px;
   font-family: "almarai", sans-serif;
   font-weight: 550;
-  font-size: 22px;
+  font-size: 50px;
+  height: 7vh;
 }
+
+.featured-description{
+  text-align: center;
+  font-family: "almarai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
 
 .card-wrap{
 max-width: 1205px;
