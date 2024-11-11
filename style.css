@@ -33,6 +33,30 @@ background: linear-gradient(90deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 1
 
 }
 
+.navbar ul{
+  list-style-type: none;
+  background-color: hsl(0, 56%, 42%);
+  padding: 0px;
+  margin: -8px;
+  overflow: hidden;
+}
+
+.navbar a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 25px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover{
+  background-color: hsl(0, 51%, 35%);
+}
+
+.navbar li{
+  float: right;
+} 
+
 .section{
   background-color: red;
   width: 100vw;
