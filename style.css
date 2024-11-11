@@ -222,13 +222,8 @@ border-radius: 3px;
 font-family: "Poppins", sans-serif;
 }
 
-.card-list .card-link .badge.fiction{
-color: #5372f0;
-background:#dde4ff;
-}
-
 .card-list .card-link .badge.lgtcs{
-color: #b22485;
+color: #db12c0;
 background: #f7dff5;
 }
 
@@ -242,7 +237,16 @@ color: #205c20;
 background: #d6f8d6;;
 }
 
+.card-list .card-link .badge.math{
+  color: #f06b53;
+  background:#dde4ff;
+  }
 
+.card-list .card-link .badge.science{
+  color: #178975;
+  background:#e2e3e8;
+}
+      
 
 .card-list .card-item .card-link {
   text-decoration: none;
