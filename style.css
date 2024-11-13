@@ -36,14 +36,12 @@ body{
 background: linear-gradient(90deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 100%); 
 }
 
-.navbar ul{
-  position: absolute;
-  width:60%;
-  top:0;
-  left:0;
+.navbar {
   z-index:1000;
-  list-style-type: none;
+  width: 60%;
+  position: absolute;
   background-color: red;
+  list-style-type: none;
   padding: 0px;
   margin: 0;
   overflow: hidden;
