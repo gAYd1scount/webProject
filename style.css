@@ -103,7 +103,7 @@ background: linear-gradient(90deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 1
 
 .section5{
   width:100%;
-  height:100vh;
+  height:300vh;
   margin:0;
   background-repeat: no-repeat;
 }
@@ -221,6 +221,13 @@ color: black;
 .container {
   max-width: 100%;
   overflow: hidden;
+}
+
+.container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
 }
 
 .card-wrap{
@@ -447,5 +454,34 @@ background: #d6f8d6;;
  font-size: 20px;
  margin: -25px 0 0 55px;
  color: #282929;
+ font-weight: 100;
 
+}
+
+.board{
+  width: 1080px;
+  height:720px;
+  border-radius: 10px;
+  overflow:hidden;
+  background-color: #121212;
+}
+
+.aboutframe{
+  width: 100%;
+}
+
+.frametext{
+  font-family:"Big Shoulders Display", sans-serif;
+  font-size: 60px;
+  color: rgb(224, 241, 31);
+  font-weight: 700;
+  margin: 50px 0 0 50px;
+}
+
+.rightarrow{
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+  float: left;
+  box-shadow: -2px 2px 0 rgba(255,255,255,.5)
 }
