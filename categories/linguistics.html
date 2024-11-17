@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #B30000;     
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    color: #f9d6d6;
+}
+
+.linguistics {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 20px;
+}
+.linguistics h2 {
+    font-size: 2.5em;
+    color: #B30000;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+.linguistics p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+.linguistics h3 {
+    font-size: 2em;
+    color: #B30000;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.book-grid-container {
+    padding: 0 80px; }
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);     
+    gap: 30px;
+    justify-content: center;
+}
+.book {
+    background-color: #ffebeb;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+}
+.book img {
+    width: 400px; 
+    height: 550px; 
+    border-radius: 5px;
+    object-fit: cover; 
+}
+
+.book-title {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #B30000;     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 15px;
+    padding: 15px 25px;
+}
+.book-title:hover {
+    background-color: #860000;
+    color: #fff;
+}
+
+.book:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #B30000; 
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+footer p {
+    font-size: 0.9em;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguistics - Digital Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Libranet</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="./library page.html">Library</a></li>
+                <li><a href="../jobs.html">Jobs</a></li>
+                <li><a href="../blogs.html">Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="linguistics" class="section linguistics">
+        <h2>Explore Linguistics Books</h2>
+        <p>The study of languages unlocks the complexity and beauty of human communication. Understanding languages helps us bridge cultural gaps, preserve traditions, and dive into the cognitive processes that shape our world. Whether you're learning a new language or diving into linguistic theory, our library offers a variety of resources to expand your knowledge.</p>
+        
+        <h3>Featured Books in Linguistics</h3>
+        
+        <div class="book-grid-container">
+            <div class="book-grid">
+                <div class="book">
+                    <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781439176696/the-english-is-coming-9781439176696_hr.jpg" alt="English Book">
+                    <a href="./linguistics/englishlinguistic.html" class="book-title">English</a>
+                </div>
+                <div class="book">
+                    <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781440566219/the-everything-essential-spanish-book-9781440566219_hr.jpg" alt="Spanish Book">
+                    <a href="./linguistics/spanishlinguistic.html" class="book-title">Spanish</a>
+                </div>
+                <div class="book">
+                    <img src="https://hachette.imgix.net/books/9781444199376.jpg?auto=compress,format" alt="Mandarin Book">
+                    <a href="./linguistics/chineselinguistic.html" class="book-title">Mandarin</a>
+                </div>
+                <div class="book">
+                    <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781440576911/the-everything-essential-french-book-9781440576911_hr.jpg" alt="French Book">
+                    <a href="./linguistics/frenchlinguistic.html" class="book-title">French</a>
+                </div>
+                <div class="book">
+                    <img src="https://m.media-amazon.com/images/I/51pP0Onq6vL.jpg" alt="Korean Book">
+                    <a href="./linguistics/koreanlinguistic.html" class="book-title">Korean</a>
+                </div>
+                <div class="book">
+                    <img src="https://i5.walmartimages.com/asr/28b706f8-b8b7-4947-b97c-de270fee89b9_1.ca020133b52bed6f207536d36c27c85f.jpeg" alt="Japanese Book">
+                    <a href="./linguistics/japaneselinguistic.html" class="book-title">Japanese</a>
+                </div>
+            </div>
+        </div>
+ </section>
+
+    <footer>
+        <p>&copy; 2024 Global Digital Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

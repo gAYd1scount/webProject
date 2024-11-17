@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #002366; 
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    color: #d0e1f9;
+}
+
+/* Mathematics Section */
+.mathematics {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+.mathematics h2 {
+    font-size: 2.5em;
+    color: #002366; 
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+.mathematics p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+.mathematics h3 {
+    font-size: 2em;
+    color: #002366;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Book Grid Container with Padding */
+.book-grid-container {
+    padding: 0 80px; 
+}
+
+/* Book Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+.book {
+    background-color: #e6f0ff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.book img {
+    width: 400px;
+    height: 550px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Book Title Styling */
+.book-title {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #002366; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 15px;
+    padding: 15px 25px;
+}
+.book-title:hover {
+    background-color: #001a4d;
+    color: #fff;
+}
+
+.book:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #002366; 
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+footer p {
+    font-size: 0.9em;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics - Digital Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Libranet</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="./library page.html">Library</a></li>
+                <li><a href="../jobs.html">Jobs</a></li>
+                <li><a href="../blogs.html">Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mathematics Section -->
+    <section id="mathematics" class="section mathematics">
+        <h2>Explore Mathematics Books</h2>
+        <p>Dive into the world of numbers, patterns, and theories that form the foundation of mathematics. From algebra and calculus to geometry and statistics, our library provides resources for enthusiasts and professionals alike to advance their mathematical knowledge.</p>
+        
+        <h3>Featured Books in Mathematics</h3>
+        
+        <!-- Book Grid Container with Padding -->
+        <div class="book-grid-container">
+            <!-- Book Grid -->
+            <div class="book-grid">
+                <div class="book">
+                    <img src="https://mathleaks.com/wp-content/uploads/ml/book-covers/usa/book-cover-large-9780133185485.jpg" alt="Algebra Book">
+                    <a href="./mathematics/algebramaths.html" class="book-title">Algebra</a>
+                </div>
+                <div class="book">
+                    <img src="https://www.thoughtco.com/thmb/1f9l7itc-nF6WDCKTXiEZfM38HY=/1319x0/filters:no_upscale():max_bytes(150000):strip_icc()/914srYvaWiL-0fe7efaab62544f68f4e61a88d57d9f6.jpg" alt="Calculus Book">
+                    <a href="./mathematics/calculusmaths.html" class="book-title">Calculus</a>
+                </div>
+                <div class="book">
+                    <img src="https://secure.coverart.textbookrush.com/large/857/1-9781111826857.jpg" alt="Trigonometry Book">
+                    <a href="./mathematics/trigonometrymaths.html" class="book-title">Trigonometry</a>
+                </div>
+            </div>
+        </div>
+ </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="color:white;">&copy; 2024 Global Digital Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>

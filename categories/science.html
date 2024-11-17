@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #800000;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    color: #f9d6d6;
+}
+
+/* Sciences Section */
+.sciences {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 20px;
+}
+.sciences h2 {
+    font-size: 2.5em;
+    color: #800000; 
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+.sciences p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+.sciences h3 {
+    font-size: 2em;
+    color: #800000;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Book Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 0 40px;
+}
+.book {
+    background-color: #ffe6e6;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.book img {
+    width: 400px;
+    height: 550px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Book Title Styling */
+.book-title {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #800000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s, color 0.3s;
+    padding: 15px 25px;
+    margin-top: 15px;
+}
+.book-title:hover {
+    background-color: #660000;
+    color: #fff;
+}
+
+.book:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #800000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+footer p {
+    font-size: 0.9em;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sciences - Digital Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Libranet</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="./library page.html">Library</a></li>
+                <li><a href="../jobs.html">Jobs</a></li>
+                <li><a href="../blogs.html">Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sciences Section -->
+    <section id="sciences" class="section sciences">
+        <h2>Explore Sciences Books</h2>
+        <p>Our sciences collection brings you the latest and greatest in scientific knowledge. From physics to biology, astronomy to environmental science, explore our extensive resources to deepen your understanding of the world around you.</p>
+        
+        <h3>Featured Books in Sciences</h3>
+        <!-- Book Grid -->
+<div class="book-grid">
+    <div class="book">
+        <img src="https://2f96be1b505f7f7a63c3-837c961929b51c21ec10b9658b068d6c.ssl.cf2.rackcdn.com/products/011010.jpg" alt="Physics Book">
+        <a href="./science/physicsscience.html" class="book-title">Physics</a>
+    </div>
+    <div class="book">
+        <img src="https://images.thenile.io/r1000/9781107654600.jpg" alt="Biology Book">
+        <a href="./science/biologyscience.html" class="book-title">Biology</a>
+    </div>
+    <div class="book">
+        <img src="https://g.christianbook.com/g/slideshow/2/282931/main/282931_1_ftc.jpg" alt="Chemistry Book">
+        <a href="./science/chemistryscience.html" class="book-title">Chemistry</a>
+    </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="color:white;">&copy; 2024 Global Digital Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>
