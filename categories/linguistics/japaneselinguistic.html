@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #B30000; 
+            text-align: center;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 20px;
+        }
+
+        /* Book Information Section */
+        .book-details {
+            max-width: 900px;
+            display: flex;
+            gap: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 30px auto;
+        }
+        .book-cover {
+            flex: 1;
+            text-align: center;
+        }
+        .book-cover img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 5px;
+        }
+        .book-info {
+            flex: 2;
+        }
+        .book-info h1 {
+            color: #B30000;
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .book-info p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .book-info .author-year {
+            font-weight: bold;
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        /* Buttons */
+        .book-info .btn-container {
+            margin-top: 20px;
+        }
+        .book-info .btn {
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #B30000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-right: 15px;
+            padding: 12px 25px;
+        }
+        .book-info .btn:hover {
+            background-color: #860000;
+        }
+
+        /* Synopsis Section */
+        .synopsis {
+            max-width: 900px;
+            background-color: #ffe6e6;
+            border-radius: 8px;
+            color: #333;
+            line-height: 1.6;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .synopsis h2 {
+            color: #B30000;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+        }
+
+        /* Review and Rating Section */
+        .review-section {
+            max-width: 900px;
+            background-color: #fff3f3;
+            border-radius: 8px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .review-section h3 {
+            font-size: 1.6em;
+            color: #B30000;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comments h4 {
+            font-size: 1.4em;
+            color: #B30000;
+        }
+        .comments form textarea,
+        .comments form input[type="text"] {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .comments form button {
+            padding: 10px 20px;
+            background-color: #B30000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .comments form button:hover {
+            background-color: #860000;
+        }
+        .comment-list {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .comment-list li {
+            background-color: #ffe6e6;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .comment-list .comment-author {
+            font-weight: bold;
+            color: #B30000;
+        }
+        .comment-list .comment-time {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 5px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Language Book Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Libranet - Digital Library
+    </header>
+
+    <!-- Book Information Section -->
+    <div class="book-details">
+        <div class="book-cover">
+            <img src="https://i5.walmartimages.com/asr/28b706f8-b8b7-4947-b97c-de270fee89b9_1.ca020133b52bed6f207536d36c27c85f.jpeg" alt="Japanese Book">
+        </div>
+        <div class="book-info">
+            <h1>Beginning Japanese</h1>
+            <p class="author-year">Author: Michael L.KLuemper | Published: 2019</p>
+            <p>This book is a complete guide to the Japanese language, ideal for beginners and intermediate learners who want to master grammar, vocabulary, and sentence structures.</p>
+            <!-- Buttons -->
+            <div class="btn-container">
+                <a href="#" class="btn">Read Now</a>
+                <a href="#" class="btn">Download Book</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Synopsis Section -->
+    <div class="synopsis">
+        <h2>Synopsis</h2>
+        <p>
+            "Beginning Japanese" by Michael L.KLuemper is the perfect resource for anyone looking to learn Japanese. Covering everything from the basics of grammar to conversational tips, this book helps learners achieve fluency in Japanese.
+        </p>
+    </div>
+        
+        <div class="comments">
+            <h4>Leave a Comment</h4>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <textarea rows="4" placeholder="Write your comment..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <h4>User Reviews</h4>
+            <ul class="comment-list">
+                <li>
+                    <p class="comment-author">Haruto Suzuki Teriyaki Honda</p>
+                    <p>A very detailed and useful guide for beginners. The explanations are easy to understand and well-structured.</p>
+                    <p class="comment-time">Posted on: March 2, 2024, 12:45 PM</p>
+                </li>
+                <li>
+                    <p class="comment-author">Sakura Ajinomoto</p>
+                    <p>Arigato!! This book really helped me improve my Japanese. It covers all the important grammar points and provides plenty of practice!</p>
+                    <p class="comment-time">Posted on: January 18, 2024, 3:30 PM</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

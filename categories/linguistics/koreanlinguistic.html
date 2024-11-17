@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #B30000; /* Blood red */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        /* Book Information Section */
+        .book-details {
+            max-width: 900px;
+            margin: 30px auto;
+            display: flex;
+            gap: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .book-cover {
+            flex: 1;
+            text-align: center;
+        }
+        .book-cover img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 5px;
+        }
+        .book-info {
+            flex: 2;
+        }
+        .book-info h1 {
+            color: #B30000;
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .book-info p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .book-info .author-year {
+            font-weight: bold;
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        /* Buttons */
+        .book-info .btn-container {
+            margin-top: 20px;
+        }
+        .book-info .btn {
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #B30000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-right: 15px;
+            padding: 12px 25px;
+        }
+        .book-info .btn:hover {
+            background-color: #860000;
+        }
+
+        /* Synopsis Section */
+        .synopsis {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #ffe6e6;
+            border-radius: 8px;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .synopsis h2 {
+            color: #B30000;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+        }
+
+        /* Review */
+        .review-section {
+            max-width: 900px;
+            background-color: #fff3f3;
+            border-radius: 8px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .review-section h3 {
+            font-size: 1.6em;
+            color: #B30000;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comments h4 {
+            font-size: 1.4em;
+            color: #B30000;
+        }
+        .comments form textarea,
+        .comments form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        .comments form button {
+            background-color: #B30000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            padding: 10px 20px;
+        }
+        .comments form button:hover {
+            background-color: #860000;
+        }
+        .comment-list {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .comment-list li {
+            background-color: #ffe6e6;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .comment-list .comment-author {
+            font-weight: bold;
+            color: #B30000;
+        }
+        .comment-list .comment-time {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 5px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Language Book Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Libranet - Digital Library
+    </header>
+
+    <!-- Book Information Section -->
+    <div class="book-details">
+        <div class="book-cover">
+            <img src="https://m.media-amazon.com/images/I/51pP0Onq6vL.jpg" alt="Korean Book">
+        </div>
+        <div class="book-info">
+            <h1>Korean For Beginners</h1>
+            <p class="author-year">Author: Sunjeong Shin | Published: 2021</p>
+            <p>This book is a comprehensive guide to the Korean language, exploring its grammar, vocabulary, and its unique role in East Asia.</p>
+            <!-- Buttons -->
+            <div class="btn-container">
+                <a href="#" class="btn">Read Now</a>
+                <a href="#" class="btn">Download Book</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Synopsis Section -->
+    <div class="synopsis">
+        <h2>Synopsis</h2>
+        <p>
+            "Korean For Beginners" by Sunjeong Shin provides an in-depth look at the origins, evolution, and usage of Korean. From its distinctive alphabet to modern-day usage, this book is an essential resource for anyone interested in learning Korean.
+        </p>
+    </div>
+        
+        <div class="comments">
+            <h4>Leave a Comment</h4>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <textarea rows="4" placeholder="Write your comment..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <h4>User Reviews</h4>
+            <ul class="comment-list">
+                <li>
+                    <p class="comment-author">Jennie Ruby Jane Kim</p>
+                    <p>An excellent book for anyone learning Korean. The explanations are clear, and the structure is easy to follow.</p>
+                    <p class="comment-time">Posted on: January 12, 2024, 9:09 AM</p>
+                </li>
+                <li>
+                    <p class="comment-author">Anna Kim Chaewon</p>
+                    <p>This book helped me understand Korean grammar and sentence structure better. 모든 언어 애호가에게 강력히 추천합니다!</p>
+                    <p class="comment-time">Posted on: December 25, 2023, 4:37 PM</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
