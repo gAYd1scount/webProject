@@ -1,0 +1,79 @@
+body {
+    background-color: whitesmoke;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 56%, 42%);
+    padding: 0px;
+    margin: -8px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 51%, 35%);
+}
+
+.navbar li{
+    float: right;
+}
+
+
+.header {
+    align-items: center;  
+    text-align: center;
+    margin-top: 150px;
+    height: 8vh;
+    color: black;
+    font-family:"Montserrat", sans-serif;
+}
+
+.box-model{
+    padding: 40px;
+    margin: 50px;
+    border: 100px;
+    border-color: blue;
+    text-align: center;
+    display: flex;
+    font-family:"Montserrat", sans-serif;
+    box-shadow: 0 0 15px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-model a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    padding-top: 80px;
+    color: black;
+    vertical-align: top;
+}
+
+.box-model p{
+    text-align: left;
+    padding: 0 50px;
+    font-weight: 100;
+}
+
+.box-content {
+    padding: 25px;
+}
+
+.card-image {
+    height: auto;
+    max-width: 550px;
+    object-fit: cover;
+    border-radius: 5px;
+}

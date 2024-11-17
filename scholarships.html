@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library</title>
+    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Big+Shoulders+Display:wght@100..900&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: red;
+            padding: 10px 0;
+        }
+        .navbar a {
+          font-family: "Poppins", sans-serif;
+          font-weight:700;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+          transition: all 0.3s ease;
+            background-color: #664229;
+        }
+        .banner {
+            text-align: center;
+            color: black;
+            padding: 50px 20px;
+            background-size: cover;
+        }
+        .banner h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .banner p {
+            font-size: 18px;
+            margin: 10px 0 0;
+        }
+
+        .grantees-section {
+            text-align: left;
+            border-radius: 40px;
+            padding: 10px;
+           background: url('https://images.pexels.com/photos/18668994/pexels-photo-18668994/free-photo-of-university-library-in-connecticut.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center;
+            background-size: cover;
+            color:white;
+        }
+        .grantees-section h2 {
+            font-size: 36px;
+        }
+        .grantees-section .subsection {
+            display: flex;
+            margin: 10px;
+            gap: 10px;
+        }
+        .grantees-section .subsection div {
+            background-color: black;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+            opacity: 0.9;
+        }
+        .grantees-section .subsection div h3 {
+            font-size: 24px;
+        }
+        .grantees-section .subsection div p {
+            font-size: 14px;
+            margin-left: 10px;
+
+        }
+        .form-section {
+            text-align: left;
+            padding: 10px;
+background: url('https://images.pexels.com/photos/22717411/pexels-photo-22717411/free-photo-of-books-in-a-library.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center;
+            background-size: cover;
+
+             background-color: #664229;
+        }
+        .form-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .form-section .subsection {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .form-section .subsection div {
+            background-color: orange;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+            opacity: 0.9;
+
+        }
+        .form-section .subsection div h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        form-section .subsection div p {
+            font-size: 14px;
+        
+        }
+.form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 80%;
+            margin: 30px auto;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: orange;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .form-container input[type="file"] {
+            padding: 6px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: orange;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: darkorange;
+        
+        }
+        .footer {
+            background-color: darkred;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        .input-group{
+          color:white;
+        }
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./categories/library page.html">Library</a>
+        <a href="./scholarships.html">Scholarships</a>
+        <a href="./jobs.html">Jobs</a>
+        <a href="./blogs.html">Blogs</a>
+    </div>
+<div class="banner" id="scholarships">
+        <h1>Scholarship we provide</h1>
+        <p>~ Every page you turn is a step closer to your dreams ~</p>
+        <p>~ Keep studying, keep striving ! ~</p>
+    </div>
+<div class="grantees-section" >
+        <h2>Gallery of Grantees</h2>
+<div class="subsection">
+            <div> <img src="https://cdn.pixabay.com/photo/2021/10/01/02/49/graduate-6671172_1280.jpg"
+width="150" weight="200" align=left style="border-radius:10px; width:35%;"><h3 style="margin: 0 0 0 20px"> Bachelor of Computer Science</h3><p> Name: Tan May Lee</p><p>Age: 21</p><p>University: Harvard University</p>
+ </div>
+            <div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyQeSbU5obL2W0VaHU5sGdU-BcQIlTIt0wVA&s" 
+width="150" weight="200" align=left style="border-radius:10px;"><h3 style="margin: 0 0 0 20px"> Bachelor of Laws</h3><p> Name: Lesley Smith</p><p>Age: 27</p><p>University:Monash University</p>
+</div>
+            <div>
+<img src="https://images.squarespace-cdn.com/content/v1/543add74e4b0bb6f0dc55f47/1013cce3-ef60-498f-a620-fd3774f7aeab/Miraflor-Photo-USC-Grad-Portraits.jpg"
+width="150" weight="200" align=left style="border-radius:10px; width:48%;"><h3 style="margin: 0 0 0 20px"> Bachelor of Education</h3><p> Name: Cassie White</p><p>Age: 31</p><p>University:Oxford University</p>
+                          </div>
+            </div>
+            </div>
+
+<div class="form-section" >
+<div class="form-container">
+        <h2 style="color: white;">Interest Form</h2>
+        <form action="/submit_form" method="POST" enctype="multipart/form-data">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="input-group">
+                <label for="resume">Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <div class="input-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="institution">Institution Name:</label>
+                <input type="text" id="institution" name="institution" required>
+            </div>
+
+            <div class="input-group">
+                <label for="grades">Grades:</label>
+                <input type="text" id="grades" name="grades" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+   </div>
+<footer class="footer">
+  <h1>Contact Us: </h1>
+        <p>Email: librarylibrary@gmail.com</p>
+        <p>Phone number: 012-345-6789</p>
+        <p>Address: 123 Main Street, Springfield, IL 62701, USA</p>
+        <p>&copy; [Library Name] - All rights reserved</p>
+    </footer>
+</body>
+</html>
