@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    /* General Styling */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    header {
+        background-color: #B30000; 
+        text-align: center;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 20px;
+    }
+
+    /* Book Information Section */
+    .book-details {
+        max-width: 900px;
+        display: flex;
+        gap: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 30px auto;
+        padding: 20px;
+    }
+    .book-cover {
+        flex: 1;
+        text-align: center;
+    }
+    .book-cover img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 5px;
+    }
+    .book-info {
+        flex: 2;
+    }
+    .book-info h1 {
+        color: #B30000;
+        font-family: 'Playfair Display', serif;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .book-info p {
+        font-size: 1.1em;
+        color: #555;
+    }
+    .book-info .author-year {
+        font-weight: bold;
+        margin: 15px 0;
+        font-size: 1.1em;
+    }
+
+    /* Buttons */
+    .book-info .btn-container {
+        margin-top: 20px;
+    }
+    .book-info .btn {
+        font-size: 1.2em;
+        color: #fff;
+        background-color: #B30000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        margin-right: 15px;
+        padding: 12px 25px;
+    }
+    .book-info .btn:hover {
+        background-color: #860000;
+    }
+
+    /* Synopsis Section */
+    .synopsis {
+        max-width: 900px;
+        background-color: #ffe6e6;
+        border-radius: 8px;
+        color: #333;
+        line-height: 1.6;
+        margin: 20px auto;
+        padding: 20px;
+
+    }
+    .synopsis h2 {
+        color: #B30000;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8em;
+    }
+
+    /* Review and Rating Section */
+    .review-section {
+        max-width: 900px;
+        background-color: #fff3f3;
+        border-radius: 8px;
+        margin: 30px auto;
+        padding: 20px;
+
+    }
+    .review-section h3 {
+        font-size: 1.6em;
+        color: #B30000;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .comments {
+        margin-top: 20px;
+    }
+    .comments h4 {
+        font-size: 1.4em;
+        color: #B30000;
+    }
+    .comments form textarea,
+    .comments form input[type="text"] {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1em;
+        padding: 10px;
+        margin: 5px 0;
+    }
+    .comments form button {
+        background-color: #B30000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        padding: 10px 20px;
+    }
+    .comments form button:hover {
+        background-color: #860000;
+    }
+    .comment-list {
+        margin-top: 20px;
+        list-style-type: none;
+        padding: 0;
+    }
+    .comment-list li {
+        background-color: #ffe6e6;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);    
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .comment-list .comment-author {
+        font-weight: bold;
+        color: #B30000;
+    }
+    .comment-list .comment-time {
+        font-size: 0.9em;
+        color: #888;
+        margin-top: 5px;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology - Book Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Libranet - Digital Library
+    </header>
+
+    <!-- Book Information Section -->
+    <div class="book-details">
+        <div class="book-cover">
+            <img src="https://images.thenile.io/r1000/9781107654600.jpg" alt="Biology Book">
+        </div>
+        <div class="book-info">
+            <h1>Biology Essentials</h1>
+            <p class="author-year">Author: Brenda Walpole | Published: 2015</p>
+            <p>Unlock the mysteries of life with this essential guide to biology. From cellular processes to ecosystems, this book covers the fundamentals and latest findings, making it an invaluable resource for students and biology enthusiasts alike.</p>
+            <!-- Buttons -->
+            <div class="btn-container">
+                <a href="#" class="btn">Read Now</a>
+                <a href="#" class="btn">Download Book</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Synopsis Section -->
+    <div class="synopsis">
+        <h2>Synopsis</h2>
+        <p>
+            "Biology Essentials" by Brenda Walpole provides a comprehensive overview of biological principles, delving into the intricate structures and processes that sustain life. Ideal for both beginners and seasoned learners, it offers clear explanations and engaging content on topics from genetics to ecology.
+        </p>
+    </div>
+        
+        <div class="comments">
+            <h4>Leave a Comment</h4>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <textarea rows="4" placeholder="Write your comment..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <h4>User Reviews</h4>
+            <ul class="comment-list">
+                <li>
+                    <p class="comment-author">Ebyan Ali</p>
+                    <p>An exceptional resource for understanding the basics and advances in biology. Highly informative!</p>
+                    <p class="comment-time">Posted on: June 13, 2024, 10:07 AM</p>
+                </li>
+                <li>
+                    <p class="comment-author">Nicole Lai Shun Feng</p>
+                    <p>Comprehensive and engaging. A must-read for biology enthusiasts and students.</p>
+                    <p class="comment-time">Posted on: November 18, 2023, 2:30 PM</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
