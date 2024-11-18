@@ -1,84 +1,245 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
-    <head>
-        <!--By Ariiq Zulkarnaen bin Jebat-->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Center for Universal Education</title>
-        <meta name="descripion" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="blogstyle.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            .nav-links {
-                list-style: none;
-            }
-            .nav-links li {
-                display: inline;
-                margin: 0 15px;
-            }
-            .nav-links a {
-                color: #fff;
-                text-decoration: none;
-                font-weight: 500;
-            }
-            .nav-links a:hover {
-                color: #f9d6d6;
-            }
-            nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-            .logo {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 24px;
-                color: #fff;
-                font-weight: 600;
-            }
-            header {
-                background-color: #B30000;     
-                padding: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="logo">Libranet</div>
-                <ul class="nav-links">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./categories//library page.html">Library</a></li>
-                    <li><a href="./jobs.html">Jobs</a></li>
-                    <li><a href="./blogs.html">Blogs</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Big+Shoulders+Display:wght@100..900&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: red;
+            padding: 10px 0;
+        }
+        .navbar a {
+          font-family: "Poppins", sans-serif;
+          font-weight:700;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #664229;
+        }
+
+      .text{
+        border: 1px solid black;
+      }
+
+      .text ul{
+        font-family: "Almarai", sans-serif;
+      }
+
+
+      .text h3{
+        margin:  0 0 0 20px;
+        font-family: "Poppins", sans-serif;
+      }
+        .banner {
+          background-color: white;
+            text-align: center;
+            color: black;
+            padding: 50px 20px;
+            background-size: cover;
+        }
+        .banner h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .banner p {
+            font-size: 18px;
+            margin: 10px 0 0;
+        }
+        .about-section {
+            text-align: center;
+            border-radius: 40px;
+            padding: 10px;
+ background: url('https://images.pexels.com/photos/18668994/pexels-photo-18668994/free-photo-of-university-library-in-connecticut.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center;
+            background-size: cover;
+            background-color: #664229;
+        }
+        .about-section h2 {
+            font-size: 36px;
+        }
+        .about-section .subsection {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .about-section .subsection div {
+            background-color: white;
+            padding: 20px;
+            color: black;
+            width: 30%;
+            border-radius: 10px;
+            opacity: 0.8;
+            hover {
+            opacity: 1.0;
+                  }
+        }
+        .about-section .subsection div h3 {
+            font-size: 24px;
+            font-family: "Almarai", sans-serif;
+            margin-bottom: 15px;
+        }
+        .about-section .subsection div p {
+            font-size: 14px;
+            font-family: "Almarai", sans-serif;
+        }
+
+        .picture-section {
+            text-align: center;
+            padding: 10px;
+            background-size: cover;
+           color: black; 
+        }
+        .picture-section h2 {
+            text-align: left;
+            font-size: 20px;
+            color:white;
+            margin-bottom: 30px;
+        }
+        .picture-section .subsection {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .picture-section .subsection div {
+            background-color: #A76B50;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+        }
+        .picture-section .subsection div h3 {
+            font-size: 24px;
+            font-family: "Almarai", sans-serif;
+        }
+        .picture-section .subsection div p {
+            font-size: 14px;
+
+        }
+        .books-section {
+            text-align: left;
+            padding: 15px;
+            background-size: cover;
+          color: black;
+        }
+        .books-section h2 {
+            font-size: 30px;
+        }
+        .books-section h3 {
+            font-size: 20px;
+        }
+        .books-section .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .books-section .content .text {
+            flex: 1;
+            margin-right: 20px;
+            min-width: 500px;
+        }
+        
+
+            
+      
+        .footer {
+            background-color: darkred;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./categories/library page.html">Library</a>
+        <a href="./scholarships.html">Scholarships</a>
+        <a href="./jobs.html">Jobs</a>
+        <a href="./blogs.html">Blogs</a>
+    </div>
+    </div>
+    <div class="banner" id="about">
+      <h1>About Us</h1>
+        <p style:"font-size: 8px;">The World Belongs To Those Who Read</p>
+    </div>
+    <div class="about-section" >
+        <h2>ABOUT US</h2>
+        <div class="subsection">
+            <div>
+                <h3>Our History</h3>
+                <p>Founded in 2000, Libranet has been a cornerstone of the Malaysian community for over 24 years. What started as a small collection of books donated by local residents has grown into a comprehensive library system with thousands of volumes, digital resources, and community programs.</p>
+            </div>
+            <div>
+                <h3>Our Mission</h3>
+                <p>At Libranet, our mission is to foster a love for reading and learning by providing free access to a diverse collection of resources, supporting lifelong learning, and enriching the lives of our community members. We believe in the transformative power of knowledge and aim to empower individuals through our services and programs.</p>
+            </div>
+            <div>
+                <h3>Our Vision</h3>
+                <p>We believe that a strong community is built on the foundation of shared experiences and mutual support. Our vision is to be a welcoming and inclusive space where people of all ages, backgrounds, and interests can come together, engage in meaningful dialogue, and forge lasting connections.</p>
+            </div>
+        </div>
+    </div>
+
+<div class="picture-section" >
+ <h1 style="align-items:center; justify-content:center; text-align:center;">Our Branches</h1>
+  <img src="https://images.pexels.com/photos/11984325/pexels-photo-11984325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+width="300" height="300" >
+  <img src="https://images.pexels.com/photos/22717415/pexels-photo-22717415/free-photo-of-modern-library-interior-with-chinese-script.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+width="300" height="300" >
+ <img src="https://images.pexels.com/photos/19223746/pexels-photo-19223746/free-photo-of-starfield-library-in-seoul.jpeg?auto=compress&cs=tinysrgb&w=600"
+width="300" height="300" >
+ <img src="https://images.pexels.com/photos/11793538/pexels-photo-11793538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+width="300" height="300" ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Washington D.C., United States&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beijing, China&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seoul, Korea&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;London, United Kingdom&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+ </div>
+
+
+    <div class="books-section" >
+        <div class="content">
+            <div class="text">
+                <h3 >Books given away to countries:</h3>
+                <ul>
+                    <li>Malaysia - 31%</li>
+                    <li>China - 21%</li>
+                    <li>United States - 16%</li>
+                    <li>United Kingdom - 13%</li>
+                    <li>Korea - 11%</li>
+                    <li>Japan - 8%</li>
                 </ul>
-            </nav>
-        </header>
+   <h3>Books category given away :</h3>
+                <ul>
+                    <li>Linguistics - 42%</li>
+                    <li>Science - 37%</li>
+                    <li>Mathematics - 21%</li>
+                   
+                </ul>
 
-        <h1 class="header">Centre for Universal Education</h1>
-        <h1 class="box-model">
-            <img src="./image/mental.jpeg" class="card-image" alt="">
-            <div class="box-content">
-                <h2>The Importance of Mental Health</h2>
-                <p>The Mental Health of participants in Academia is a crucial topic to attend to, from Students to Lecturers, their contribution towards the learning environment should be attended with care. A healthy and sustainable journey is as important as reaching for the skies. Affordable therapy sessions are of importance in order to tackle this issue, our organization is happy to aid by providing financial aid to individuals in need. For all.</p>
             </div>
-        </h1>
-
-        <h1 class="box-model">
-            <img src="./image/student.jpeg" class="card-image" alt="">
-            <div class="box-content">
-                <h2>Student-Teacher Engagement</h2>
-                <p>Student-to-Teacher engagement is crucial for a clear and steady path in students' learning journey. Encouraging their participation in class and within the realm of education contributes to their passion and love for the syllabus and skills taught in courses. Teachers from all corners of the world are appreciated and remembered by students as to their lasting contribution to their growth and spirit in life. The Centre for Universal Education plans on adopting a new standard for students to grow with their teachers.</p>
-            </div>
-        </h1>
-
-        <h1 class="box-model">
-            <img src="./image/scholar.jpeg" class="card-image" alt="">
-            <div class="box-content">
-                <h2>Lowering the Barrier of Entry</h2>
-                <p>Education is key to a growing society, it plays an integral role for children and young talent to nurture their talent and ability in varying branches from sciences to arts. The cost of education should remain affordable and realistic for up and coming students to allow them to expand their horizon in life. That is why the Centre for Universal Education gives out 100s of scholarships on a yearly basis to students all around the world.</p>
-            </div>
-        </h1>
-    </body>    
+            <img style="width:33%" src="./image/pie.png" alt="">
+            <img style="width:33%" src="./image/pie2.png" alt="">
+            
+        </div>
+    </div>
+       <footer class="footer">
+         <h1> Contact Us: </h1>
+        <p>Email: librarylibrary@gmail.com</p>
+        <p>Phone number: 012-345-6789</p>
+        <p>Address: 123 Main Street, Springfield, IL 62701, USA</p>
+        <p>&copy; [Library Name] - All rights reserved</p>
+    </footer>             
+</body>
 </html>
