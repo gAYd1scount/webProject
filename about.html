@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Big+Shoulders+Display:wght@100..900&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: white;
@@ -28,6 +28,20 @@
         .navbar a:hover {
             background-color: #664229;
         }
+
+      .text{
+        border: 1px solid black;
+      }
+
+      .text ul{
+        font-family: "Almarai", sans-serif;
+      }
+
+
+      .text h3{
+        margin:  0 0 0 20px;
+        font-family: "Poppins", sans-serif;
+      }
         .banner {
           background-color: white;
             text-align: center;
@@ -53,7 +67,6 @@
         }
         .about-section h2 {
             font-size: 36px;
-            margin-bottom: 30px;
         }
         .about-section .subsection {
             display: flex;
@@ -73,10 +86,12 @@
         }
         .about-section .subsection div h3 {
             font-size: 24px;
+            font-family: "Almarai", sans-serif;
             margin-bottom: 15px;
         }
         .about-section .subsection div p {
             font-size: 14px;
+            font-family: "Almarai", sans-serif;
         }
 
         .picture-section {
@@ -104,7 +119,7 @@
         }
         .picture-section .subsection div h3 {
             font-size: 24px;
-            margin-bottom: 15px;
+            font-family: "Almarai", sans-serif;
         }
         .picture-section .subsection div p {
             font-size: 14px;
@@ -118,11 +133,9 @@
         }
         .books-section h2 {
             font-size: 30px;
-            margin-bottom: 30px;
         }
         .books-section h3 {
-            font-size: 2d0px;
-            margin-bottom: 30px;
+            font-size: 20px;
         }
         .books-section .content {
             display: flex;
@@ -132,7 +145,10 @@
         .books-section .content .text {
             flex: 1;
             margin-right: 20px;
+            min-width: 500px;
         }
+        
+
             
       
         .footer {
@@ -193,7 +209,6 @@ width="300" height="300" ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Was
 
 
     <div class="books-section" >
-        <h2 style="margin: 0;">Books and Scholarships Given</h2>
         <div class="content">
             <div class="text">
                 <h3 >Books given away to countries:</h3>
@@ -216,8 +231,7 @@ width="300" height="300" ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Was
             </div>
             <img style="width:33%" src="./image/pie.png" alt="">
             <img style="width:33%" src="./image/pie2.png" alt="">
-            <div>
-            </div>
+            
         </div>
     </div>
        <footer class="footer">
