@@ -115,7 +115,23 @@ nav {
     transform: scale(1.05);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
-
+ .navbar {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  padding: 10px 0;
+  }
+  .navbar a {
+  font-family: "Poppins", sans-serif;
+  font-weight:700;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  }
+  .navbar a:hover {
+  background-color: #664229;
+  }
 /* Footer */
 footer {
     background-color: #800000;
@@ -134,18 +150,14 @@ footer p {
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <div class="logo">Libranet</div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="./library page.html">Library</a></li>
-                <li><a href="../jobs.html">Jobs</a></li>
-                <li><a href="../blogs.html">Blogs</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../categories/library page.html">Library</a>
+        <a href="../scholarships.html">Scholarships</a>
+        <a href="../jobs.html">Jobs</a>
+        <a href="../blogs.html">Blogs</a>
+    </div>
 
     <!-- Sciences Section -->
     <section id="sciences" class="section sciences">
