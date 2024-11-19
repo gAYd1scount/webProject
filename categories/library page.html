@@ -11,6 +11,7 @@
 
 /* Font and Background */
 body {
+  margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #333;
     background-color: #f9ebeb; }
@@ -120,6 +121,23 @@ nav {
     background-color: #f9ebeb; 
     padding: 50px 20px;
 }
+  .navbar {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  padding: 10px 0;
+  }
+  .navbar a {
+  font-family: "Poppins", sans-serif;
+  font-weight:700;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  }
+  .navbar a:hover {
+  background-color: #664229;
+  }
 h2 {
     font-size: 2.5em;
     color: #8B0000; 
@@ -179,18 +197,17 @@ footer p {
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <div class="logo">Libranet</div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../library page.html">Library</a></li>
-                <li><a href="../jobs.html">Jobs</a></li>
-                <li><a href="../blogs.html">Blogs</a></li>
-            </ul>
-        </nav>
-    </header>
+      
+ <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../categories/library page.html">Library</a>
+        <a href="../scholarships.html">Scholarships</a>
+        <a href="../jobs.html">Jobs</a>
+        <a href="../blogs.html">Blogs</a>
+    </div>
+
+
 
     <section class="banner">
         <h1>Welcome to the Global Digital Library</h1>
@@ -207,9 +224,6 @@ footer p {
         <a href="./mathematics.html" class="book">Mathematics</a>
     </div>
 </section>
-
-
-   
     <footer>
         <p id="fontwhite">&copy; 2024 Global Digital Library. All rights reserved.</p>
     </footer>
