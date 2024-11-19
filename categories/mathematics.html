@@ -20,6 +20,23 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+ .navbar {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  padding: 10px 0;
+  }
+  .navbar a {
+  font-family: "Poppins", sans-serif;
+  font-weight:700;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  }
+  .navbar a:hover {
+  background-color: #664229;
+  }
 .logo {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -138,19 +155,14 @@ footer p {
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <div class="logo">Libranet</div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="./library page.html">Library</a></li>
-                <li><a href="../jobs.html">Jobs</a></li>
-                <li><a href="../blogs.html">Blogs</a></li>
-            </ul>
-        </nav>
-    </header>
-
+      <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../categories/library page.html">Library</a>
+        <a href="../scholarships.html">Scholarships</a>
+        <a href="../jobs.html">Jobs</a>
+        <a href="../blogs.html">Blogs</a>
+    </div>
     <!-- Mathematics Section -->
     <section id="mathematics" class="section mathematics">
         <h2>Explore Mathematics Books</h2>
