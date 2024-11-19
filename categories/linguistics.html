@@ -39,6 +39,23 @@ nav {
 .nav-links a:hover {
     color: #f9d6d6;
 }
+ .navbar {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  padding: 10px 0;
+  }
+  .navbar a {
+  font-family: "Poppins", sans-serif;
+  font-weight:700;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  }
+  .navbar a:hover {
+  background-color: #664229;
+  }
 
 .linguistics {
     text-align: center;
@@ -128,18 +145,15 @@ footer p {
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Libranet</div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="./library page.html">Library</a></li>
-                <li><a href="../jobs.html">Jobs</a></li>
-                <li><a href="../blogs.html">Blogs</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../categories/library page.html">Library</a>
+        <a href="../scholarships.html">Scholarships</a>
+        <a href="../jobs.html">Jobs</a>
+        <a href="../blogs.html">Blogs</a>
+    </div>
+
 
     <section id="linguistics" class="section linguistics">
         <h2>Explore Linguistics Books</h2>
