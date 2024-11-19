@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    /* General Styling */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    header {
+        background-color: #003366; 
+        text-align: center;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 20px;
+     }
+
+    /* Book Information Section */
+    .book-details {
+        max-width: 900px;
+        display: flex;
+        gap: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 30px auto;
+    }
+    .book-cover {
+        flex: 1;
+        text-align: center;
+    }
+    .book-cover img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 5px;
+    }
+    .book-info {
+        flex: 2;
+    }
+    .book-info h1 {
+        color: #003366;
+        font-family: 'Playfair Display', serif;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .book-info p {
+        font-size: 1.1em;
+        color: #555;
+    }
+    .book-info .author-year {
+        font-weight: bold;
+        margin: 15px 0;
+        font-size: 1.1em;
+    }
+
+    /* Buttons */
+    .book-info .btn-container {
+        margin-top: 20px;
+    }
+    .book-info .btn {
+        font-size: 1.2em;
+        color: #fff;
+        background-color: #003366;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        margin-right: 15px;
+        padding: 12px 25px;
+    }
+    .book-info .btn:hover {
+        background-color: #002244;
+    }
+
+    /* Synopsis Section */
+    .synopsis {
+        max-width: 900px;
+        background-color: #e6ecf3; 
+        border-radius: 8px;
+        color: #333;
+        line-height: 1.6;
+        margin: 20px auto;
+        padding: 20px;
+
+    }
+    .synopsis h2 {
+        color: #003366;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8em;
+    }
+
+    /* Review and Rating Section */
+    .review-section {
+        max-width: 900px;
+        background-color: #f0f5fc;
+        border-radius: 8px;
+        margin: 30px auto;
+        padding: 20px;
+    }
+    .review-section h3 {
+        font-size: 1.6em;
+        color: #003366;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .comments {
+        margin-top: 20px;
+    }
+    .comments h4 {
+        font-size: 1.4em;
+        color: #003366;
+    }
+    .comments form textarea,
+    .comments form input[type="text"] {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1em;
+        padding: 10px;
+        margin: 5px 0;
+    }
+    .comments form button {
+        background-color: #003366;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        padding: 10px 20px;
+    }
+    .comments form button:hover {
+        background-color: #002244;
+    }
+    .comment-list {
+        margin-top: 20px;
+        list-style-type: none;
+        padding: 0;
+    }
+    .comment-list li {
+        background-color: #f0f5f7;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .comment-list .comment-author {
+        font-weight: bold;
+        color: #003366;
+    }
+    .comment-list .comment-time {
+        font-size: 0.9em;
+        color: #888;
+        margin-top: 5px;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigonometry - Book Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Libranet - Digital Library
+    </header>
+
+    <!-- Book Information Section -->
+    <div class="book-details">
+        <div class="book-cover">
+            <img src="https://secure.coverart.textbookrush.com/large/857/1-9781111826857.jpg" alt="Trigonometry Book">
+        </div>
+        <div class="book-info">
+            <h1>Trigonometry: A Complete Guide</h1>
+            <p class="author-year">Author: Charles P.Mckeage | Published: 2005</p>
+            <p>This comprehensive guide provides a thorough exploration of trigonometric concepts, ideal for students and professionals seeking a deeper understanding of the subject.</p>
+            <!-- Buttons -->
+            <div class="btn-container">
+                <a href="#" class="btn">Read Now</a>
+                <a href="#" class="btn">Download Book</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Synopsis Section -->
+    <div class="synopsis">
+        <h2>Synopsis</h2>
+        <p>
+            "Trigonometry: A Complete Guide" by Charles P.Mckeage explores the principles and applications of trigonometry, from the basic trigonometric ratios to more advanced topics such as inverse functions and the law of sines and cosines. This book is suitable for both beginners and advanced learners.
+        </p>
+    </div>
+        
+        <div class="comments">
+            <h4>Leave a Comment</h4>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <textarea rows="4" placeholder="Write your comment..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <h4>User Reviews</h4>
+            <ul class="comment-list">
+                <li>
+                    <p class="comment-author">Michael Johnson</p>
+                    <p>This book made trigonometry so much easier to understand! Highly recommended for students.</p>
+                    <p class="comment-time">Posted on: March 10, 2022, 2:15 PM</p>
+                </li>
+                <li>
+                    <p class="comment-author">Emily Williams</p>
+                    <p>A must-have for anyone studying trigonometry. The explanations are clear, and the exercises are helpful.</p>
+                    <p class="comment-time">Posted on: June 5, 2023, 9:30 AM</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
